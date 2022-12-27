@@ -1,0 +1,42 @@
+still on calendar day 1
+
+apparently im above 50% of all people who start something and don't finish it - but i dont feel that way. i feel like im still someone who starts things and doesn't finish them 
+
+maybe ill feel accomplished once i finish this course
+
+here's my proof of work:
+
+
+
+#If the bill was $150.00, split between 5 people, with 12% tip. 
+
+#Each person should pay (150.00 / 5) * 1.12 = 33.6
+#Format the result to 2 decimal places = 33.60
+
+#Tip: There are 2 ways to round a number. You might have to do some Googling to solve this.💪
+
+#Write your code below this line 👇
+
+###asks what the bill is and stores it in a variable
+bill = float(input("What is the bill? $ "))
+
+###asks how many people there are and stores it in a variable
+people = int(input("How many people are eating? "))
+
+###asks what % the tip is and stores it in a variable
+tip = float(input("What (%) tip would you like to give?? "))
+
+###operates on tip to turn it from a WHOLE number to a decimal
+tip_percent = tip/100
+
+###refernces bill and operated on tip_percent to get the total bill
+bill_total = bill * (1 +  tip_percent)
+
+###divides total bill and the amount of people
+bill_per_person = round(bill_total / people, 2)
+
+###stores message in variable
+amount = f"Each person should pay$ {bill_per_person}"
+
+###prints message
+print(amount)
