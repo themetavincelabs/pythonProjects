@@ -1,0 +1,32 @@
+# 🚨 Don't change the code below 👇
+student_heights = input("Input a list of student heights ").split()
+for n in range(0, len(student_heights)):
+  student_heights[n] = int(student_heights[n])
+# 🚨 Don't change the code above 👆
+
+
+#Write your code below this row 👇
+
+#looping while not using len or sum...
+
+
+#frist define a variable total heigt, like we do with bill = 0 so we can operate on it
+total_height = 0
+
+#operate on the list above (student) heights by adding "height" which loops in each instance od "student heights"
+#we can then operate on total height with our new found "height"
+for height in student_heights:
+    total_height = total_height + height
+
+
+#the same process as above, instead were building the number of students by not using len
+#define a variable to operate on
+num_students = 0
+
+#operate on num_students by adding += 1 for each instance of the first list we have above, student_heights
+for student in student_heights:
+    num_students += 1
+
+
+average = int(round((total_height / num_students)))
+print(average)
