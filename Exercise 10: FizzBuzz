@@ -1,0 +1,21 @@
+#You are going to write a program that automatically prints the solution to the FizzBuzz game.
+
+#Your program should print each number from 1 to 100 in turn.
+#Write your code below this row 👇
+
+#define an operator
+num = 0
+
+#user if, elif, else logic because these are all mutually exclusive
+# if you just did a bunch of IFs, it would only output Fizz, Buzz, FizzBuzz and no numbers
+##You need the "else" to return the numbers
+###YOU NEED TO WRITE THE FIZZBUZZ CODE FIRST becuase if Fizz is the first output, it will only return "Fizz" and not operate the rest of the IF statements!!!!
+for number in range (1, 101):
+    if number % 3 == 0 and number % 5 == 0:
+        print("FizzBuzz")
+    elif number % 5 == 0:
+        print("Buzz")
+    elif number % 3 == 0:
+        print("Fizz")
+    else:
+        print(number)
