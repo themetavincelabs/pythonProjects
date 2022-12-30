@@ -1,0 +1,11 @@
+#defining functions
+
+#define the function
+def my_function():
+  print("This is my funciton. It's function is to execute the lines of code I feed it.")
+  print("This is the second line of the function.")
+  print("End function.")
+
+
+#call the function
+my_function()
