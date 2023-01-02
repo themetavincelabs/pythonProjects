@@ -1,0 +1,35 @@
+##Python Dictionaries
+
+
+#exisitng base dictionary
+student_scores = {
+  "Harry": 81,
+  "Ron": 78,
+  "Hermione": 99, 
+  "Draco": 74,
+  "Neville": 62,
+}
+
+# 🚨 Don't change the code above 👆
+
+#TODO-1: Create an empty dictionary called student_grades.
+student_grades = {}
+
+#TODO-2: Write your code below to add the grades to student_grades.👇
+
+#for loop will run through the dictionary above
+for student in student_scores:
+    score = student_scores[student] #score is the new variable we've assigned to the student key
+    #if statements check criteria to add in the resulting value based on the logic
+    if score > 90:
+        student_grades[student] = "Outstanding"
+    elif score > 80:
+        student_grades[student] = "Exceeds Expectations"
+    elif score > 70:
+        student_grades[student] = "Acceptable"
+    else:
+        student_grades[student] = "Fail"
+
+
+# 🚨 Don't change the code below 👇
+print(student_grades)
